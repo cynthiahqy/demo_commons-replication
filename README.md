@@ -1,9 +1,7 @@
-# Level-1 demo: commons over a replication package
+# Demo: commons over a replication package
 
 A working [commons](https://opensource.posit.co/blog/2026-09-15_commons-0-1-0/) agent whose
 trusted measures **are** a published paper's own analysis, and whose context is the paper.
-No xmap. This is the level-1 arm from [xmap#63](https://github.com/cynthiahqy/xmap/issues/63) —
-the control the xmap claim eventually gets measured against.
 
 ## Run it
 
@@ -27,7 +25,7 @@ self-contained (`.RData`, no external downloads), and independently verified —
 gold-score-4 instance in [REPRO-Bench](https://arxiv.org/abs/2507.18901), and the JOP
 replication analyst verified it at publication.
 
-**It is political science, not economics.** For a level-1 demo the discipline is
+**It is political science, not economics.** For this demo the discipline is
 irrelevant — what matters is that the package runs unattended. Swapping in an econ paper
 is a matter of rewriting `measures/` and `context/`.
 
