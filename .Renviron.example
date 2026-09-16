@@ -1,0 +1,3 @@
+# Copy to .Renviron (gitignored) and fill in.
+# app.R uses ellmer::chat("anthropic/claude-sonnet-5").
+ANTHROPIC_API_KEY=

@@ -1,0 +1,42 @@
+tables:
+  - name: dta
+    description: >
+      Pooled CCES respondents merged to zip code-level workplace and residence
+      characteristics. One row per respondent-year. Table 1 uses the white == 1
+      subsample only.
+    columns:
+      - name: year
+        type: number
+        description: CCES survey year.
+      - name: zipcode
+        type: string
+        description: Respondent residential zip code; the clustering unit for all Table 1 standard errors.
+      - name: white
+        type: number
+        description: 1 if the respondent is white. Table 1 is estimated on this subsample only.
+      - name: racial_flux
+        type: number
+        description: >
+          The paper's headline constructed measure: Black workers relative to Black
+          residents in the respondent's zip code. Not a population share.
+      - name: wac_pct_black
+        type: number
+        description: Percent Black among workers in the zip code (workplace area characteristics).
+      - name: rac_pct_black
+        type: number
+        description: Percent Black among residents in the zip code (residence area characteristics).
+      - name: pct_black
+        type: number
+        description: Resident percent Black, included as a control separately from racial_flux.
+      - name: pres_dem
+        type: number
+        description: Voted Democratic for president. Higher is more Democratic.
+      - name: house_dem
+        type: number
+        description: Voted Democratic for U.S. House. Higher is more Democratic.
+      - name: mean_rr
+        type: number
+        description: Racial resentment scale. Higher is more resentful.
+      - name: affirm
+        type: number
+        description: Support for affirmative action.
